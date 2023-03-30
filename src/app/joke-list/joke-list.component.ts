@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { JokeListService } from '../joke-list.service';
+import { JokeComponent } from '../joke/joke.component';
 
 @Component({
   selector: 'app-joke-list',

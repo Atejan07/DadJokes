@@ -1,8 +1,8 @@
 <div class="joke-box">
     <p>Current joke:</p>
-    <p>{{currentJoke}}</p>
+    <p>{{currentJoke.joke}}</p>
     <div class= "button-wrapper">
-     <button>Love it 💗</button>
+     <button (click)="addToSavedJokes()">Love it 💗</button>
      <button>Meh 😒</button>
     </div>
 </div>

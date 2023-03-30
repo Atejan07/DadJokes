@@ -9,16 +9,29 @@ import { Joke } from './Joke';
   styleUrls: ['./joke.component.css']
 })
 export class JokeComponent implements OnInit{
-  currentJoke: Joke = {
+  currentJoke :Joke = {
     id:'',
     joke: '',
     status: 404
   };
 
+  savedJokes : Joke [] = [];
+
+
 constructor(private hazJoke: JokeListService) {}
 
 
 ngOnInit() {
- this.hazJoke.getJoke().subscribe(newJoke => this.currentJoke.joke = newJoke.joke)
+ this.getNewJoke();
+}
+
+getNewJoke(){
+  this.hazJoke.getJoke().subscribe(newJoke => {this.currentJoke = newJoke})
+}
+addToSavedJokes(){
+
+this.savedJokes.push(this.currentJoke);
+this.getNewJoke();
+console.log(this.savedJokes)
 }
 }
