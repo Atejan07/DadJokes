@@ -1,0 +1,27 @@
+details {
+    border: 1px solid rgb(255, 114, 217); 
+    border-radius: 4px;
+    padding: 0.5em 0.5em 0;
+    Background-color: rgb(255, 114, 217); 
+    color:azure;
+}
+
+summary {
+    font-weight: bold;
+    margin: -0.5em -0.5em 0;
+    padding: 0.5em;
+}
+
+details[open] {
+    padding: 0.5em;
+}
+
+details[open] summary {
+    border-bottom: 1px solid rgb(255, 114, 217); 
+    margin-bottom: 0.5em;
+}
+
+.saved-joke-list {
+    width: 300px;
+    margin: 20px 0;
+}

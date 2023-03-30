@@ -1,0 +1,21 @@
+.joke-box{
+background-color: rgb(255, 162, 230);
+border:2px solid rgb(255, 114, 217);
+padding: 10px;
+border-radius: 20px;
+}
+
+.button-wrapper{
+display: flex;
+justify-content: space-around;
+}
+
+.button-wrapper button{
+padding: 5px;
+background-color:rgb(255, 114, 217); 
+border: 20px;
+}
+
+.button-wrapper button:nth-child(2){
+background-color:rgb(184, 48, 147); 
+}
